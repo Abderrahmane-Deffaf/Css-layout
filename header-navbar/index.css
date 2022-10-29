@@ -26,6 +26,7 @@ nav {
 }
 svg {
     width: 90%;
+    margin-bottom: 1rem;
 }
 ul {
     width: 90%;
@@ -34,10 +35,10 @@ ul {
     gap: 1%;
     padding: 0;
     justify-content: center;
+    align-items: center;
 }
 li {
     list-style: none;
-    min-width: 140px;
     flex-basis: 49%;
     background-color: var(--bg-red);
     padding: 1rem;
@@ -55,29 +56,43 @@ a {
     color: var(--white);
 }
 /* setting the media queries */
-@media only screen and (min-width:550px) {
+@media only screen and (min-width:600px) {
     ul {
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         gap: 0;
-        max-width: 500px;
+        max-width: 600px;
     }
     li {
         background-color: transparent;
         margin: 0;
+        flex-basis: 12.5%;
     }
     a {
         color: var(--black);
     }
 }
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:945px) {
     nav {
         
     }
-    ul {
-        max-width: 1200px;
-        justify-content: space-between;
-    }
     li {
-        flex-basis: 10%;
+        flex-basis: 5%;
+    }
+    ul {
+        justify-content: space-between;
+        max-width: 1200px;
+        flex-flow: row nowrap;
+    }
+    svg {
+        flex-grow: 2;
+        order: 1;
+        flex-basis: 80%;
+        margin: 0;
+    }
+    li:first-child , li:nth-child(2) {
+        order: 0;
+    }
+    li:nth-child(3) , li:last-child {
+        order: 2;
     }
 }

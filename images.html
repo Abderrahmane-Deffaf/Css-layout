@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsice Images</title>
+</head>
+<body>
+    <!-- it does not work as we expected on chrome instead in mozilla it jus work perfactlly -->
+        <img
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            srcset="
+            /images/banner-1200_mzyzgt/banner-1200_mzyzgt_c_scale,w_300.png 300w,
+            /images/banner-1200_mzyzgt/banner-1200_mzyzgt_c_scale,w_593.png 593w,
+            /images/banner-1200_mzyzgt/banner-1200_mzyzgt_c_scale,w_826.png 826w,
+            /images/banner-1200_mzyzgt/banner-1200_mzyzgt_c_scale,w_980.png 980w,
+            /images/banner-1200_mzyzgt/banner-1200_mzyzgt_c_scale,w_1200.png 1200w"
+            src="/images/banner-1200_mzyzgt/banner-1200_mzyzgt_c_scale,w_1200.png"
+            alt=""
+        >
+</body>
+</html>

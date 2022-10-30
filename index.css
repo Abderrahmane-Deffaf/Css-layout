@@ -129,13 +129,18 @@ figure {
     position: relative;
     max-height: 400px;
 }
+#featured-print ul {
+    display: flex;
+    flex-direction: column;
+}
+
 li {
     min-width: 150px;
     width: 100%;
     flex-basis: 100%;
 }
 
-img {
+img , picture {
     object-fit: cover;
     width: 100%; 
     overflow: hidden;
@@ -186,6 +191,16 @@ h3 {
 .logo {
     width: 100%;
 }
+#popular-prints {
+    background-color: var(--color2);
+}
+#popular-prints ul li:nth-child(2) {
+    border: 0.6rem solid var(--color4);
+}
+#mission {
+    margin-bottom: 2rem;
+}
+
 
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
 
@@ -219,8 +234,14 @@ h3 {
     .logo {
         width: 60%;
     }
+    #popular-prints ul li:last-child {
+        flex-basis: 100%;
+    }
 }
-
+#banner {
+    padding: 0rem 2rem;
+    background-color: var(--color8);
+}
 
 /* At this breakpoint, transition to 3 figures per line */
 
@@ -248,12 +269,14 @@ h3 {
         flex-grow: 2;
         order: 1;
         flex-basis: 80%;
-        margin: 0;
     }
     #li:first-child , li:nth-child(2) {
         order: 0;
     }
     #li:nth-child(3) , li:last-child {
         order: 2;
+    }
+    #popular-prints ul li:last-child {
+        flex-basis: 32%;
     }
 }

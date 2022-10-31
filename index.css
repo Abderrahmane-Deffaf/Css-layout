@@ -200,7 +200,10 @@ h3 {
 #mission {
     margin-bottom: 2rem;
 }
-
+.container-image {
+    padding: 0rem 2rem;
+    background-color: var(--color8);
+}
 
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
 
@@ -237,10 +240,6 @@ h3 {
     #popular-prints ul li:last-child {
         flex-basis: 100%;
     }
-}
-#banner {
-    padding: 0rem 2rem;
-    background-color: var(--color8);
 }
 
 /* At this breakpoint, transition to 3 figures per line */

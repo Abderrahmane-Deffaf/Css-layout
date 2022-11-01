@@ -1,23 +1,30 @@
 /* Based on "Composition II in Red, Blue, and Yellow," by Piet Mondrian (1930): https://en.wikipedia.org/wiki/Piet_Mondrian */
+html {
+    box-sizing: border-box;
+}
+* , *::after , *::before {
+    box-sizing: inherit;
+}
 body {
     display: flex ; 
     justify-content : center ; 
-    padding: 2rem;
+    padding: 1rem;
+    margin: 0;
   }
 .wrapper {
     display:grid ; 
     grid-template-columns : 15% 25% 20% 35% 5% ; 
     grid-template-rows: 5% 5% 15% 5% 10% 25% 5% 10% 10% 5% 5%;  
-    width: 98%;
+    width:700px;
     min-width: 375px;
     max-width: 600px;
-    min-height:650px; 
+    height: 700px ; 
 }
   div {
       border: 1px solid black;
       background-color: white;
     font-family: Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .a {
     grid-area: 1/1/2/4 ; 

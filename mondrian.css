@@ -1,0 +1,113 @@
+/* Based on "Composition II in Red, Blue, and Yellow," by Piet Mondrian (1930): https://en.wikipedia.org/wiki/Piet_Mondrian */
+body {
+    display: flex ; 
+    justify-content : center ; 
+    padding: 2rem;
+  }
+.wrapper {
+    display:grid ; 
+    grid-template-columns : 15% 25% 20% 35% 5% ; 
+    grid-template-rows: 5% 5% 15% 5% 10% 25% 5% 10% 10% 5% 5%;  
+    width: 98%;
+    min-width: 375px;
+    max-width: 600px;
+    min-height:650px; 
+}
+  div {
+      border: 1px solid black;
+      background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+  }
+  .a {
+    grid-area: 1/1/2/4 ; 
+    background-color: #b3b2b3 ; 
+  }
+  .b {
+    grid-area: 1/4/3/6 ; 
+      background-color: #7c7b7c ; 
+  }
+  .c {
+    grid-area: 2/1/4/2 ; 
+      background-color: #686668 ; 
+  }
+  .d {
+  grid-area: 2/2/4/4 ; 
+      background-color: #b8b7b8 ; 
+  }
+  .e {
+  grid-area: 3/4/5/5 ; 
+      background-color: #616061 ; 
+  }
+  .f {
+  grid-area: 3/5/9/6; 
+      background-color: #cfcdcf ; 
+  }
+  .g {
+      grid-area: 4/1/6/2 ; 
+      background-color: #737273 ; 
+  }
+  .h {
+      grid-area: 4/2/6/3 ; 
+      background-color: #d0cfd0 ; 
+  }
+  .i {
+      grid-area: 4/3/6/4 ; 
+      background-color: #d6d5d6 ; 
+  }
+  .j {
+      grid-area: 5/4/7/5 ; 
+      background-color: #8c8b8c; 
+  }
+  .k {
+      grid-area: 6/1/8/2 ; 
+      background-color: #b5b4b5 ; 
+  }
+  .l {
+      grid-area: 6/2/7/3 ; 
+      background-color: #d7d6d7 ; 
+  }
+  .m {
+      grid-area: 6/3/7/4 ;  
+    background-color: #dddbdd; 
+  }
+  .n {
+      grid-area: 8/1/12/2 ; 
+      background-color: #b8b7b8 ; 
+  }
+  .p {
+      grid-area: 7/2/9/3 ; 
+      background-color: #4f4d4f ; 
+  }
+  .s {
+      grid-area: 7/3/9/4 ; 
+      background-color: #afaeb0 ; 
+  }
+  .v {
+      grid-area: 7/4/9/5  ; 
+      background-color: #cac9ca ; 
+  }
+  .w {
+      grid-area: 9/2/10/3 ; 
+      background-color: #adacae ; 
+  }
+  .x {
+      grid-area: 9/3/10/4 ; 
+      background-color: #a7a6a8 ; 
+  }
+  .y {
+      grid-area: 9/4/11/5 ; 
+      background-color: #a4a3a4 ; 
+  }
+  .z {
+      grid-area: 9/5/12/6 ; 
+      background-color: #535153 ; 
+  }
+  .q {
+      grid-area: 10/2/12/4 ; 
+      background-color: #7d7b7d ; 
+  }
+  .u {
+      grid-area: 11/4/12/5 ; 
+      background-color: #858485 ; 
+  }
